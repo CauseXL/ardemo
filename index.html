@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script> -->
+    <!-- <script src="src/ar.js"></script> -->
+    <!-- <script src="src/aframe-master.min.js"></script> -->
+    <!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  <body >
+
+  <a-scene>
+      <a-sphere src="src/earth.jpg" position="10 1.25 -15" radius="2" segments-height="53">
+        <a-animation attribute="rotation" easing="linear"
+        dur="10000"
+        to="0 360 0"
+        repeat="indefinite">
+        </a-animation>
+      </a-sphere>
+      <a-sky src="src/juwai.jpeg" rotation="0 0 0"></a-sky>
+      <!-- <a-entity position="0 2.25 -15" particle-system="color: #EF0000,#44CC00"></a-entity> -->
+
+    <!-- <a-torus color="hotpink" position="0 1.25 -15" radius="2"></a-torus>
+    <a-torus color="orange" position="0 1.25 -15" radius="4" radius-tubular="0.2"></a-torus>
+    <a-torus color="blue" position="0 1.25 -15" radius="3" radius-tubular="0.2"></a-torus>
+    <a-torus color="red" position="0 1.25 -15" radius="5" radius-tubular="0.2"></a-torus>
+
+    <a-cylinder position="1 1 -13" rotation="0 45 0" radius="0.1" height="2" depth="0.2" color="magenta"></a-cylinder>
+    <a-cylinder position="-1 1 -13" rotation="0 45 0" radius="0.1" height="2" depth="0.2" color="magenta"></a-cylinder>
+
+    <a-plane position="0 0 -14" rotation="-90 0 0" width="4" height="4" color="#7bc8a4"></a-plane>
+    <a-sky src="src/puydesancy.jpg" rotation="0 -130 0"></a-sky>
+
+    <a-text value="Hello, XXX!" position="-0.8 1.7 -12.9" color="black" width="7"></a-text>
+    <a-box position="0.01 1.7 -13" rotation="0 0 0" width="2" height="0.5" depth="0.1" color="khaki"></a-box> -->
+    
+  </a-scene>
+  <!-- <a-scene embedded arjs='sourceType: webcam;'>
+      <a-box src="https://i.imgur.com/mYmmbrp.jpg" position="0 2 -5" rotation="0 45 45"
+        scale="2 2 2"></a-box>
+    
+      <a-sky color="#222"></a-sky>
+      <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene> -->
+
+  </body>
+
+  <!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> -->
+<!-- <script src="src/ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body> -->
+</html>
